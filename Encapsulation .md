@@ -2,53 +2,49 @@
 
 ## 🎯 AIM
 
-To implement *Encapsulation* in Python by defining a class Rectangle with *private member variables* __length and __breadth.
+To implement **Encapsulation** in Python by defining a class `Rectangle` with **private member variables** `__length` and `__breadth`.
 
 ---
 
 ## 🧠 ALGORITHM
 
-1. *Define the Class*:
-   - Create a class Rectangle with two private attributes: __length and __breadth.
+1. **Define the Class**:
+   - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
 
-2. *Initialize Variables*:
-   - Use the __init__() constructor to set initial values for __length and __breadth.
+2. **Initialize Variables**:
+   - Use the `__init__()` constructor to set initial values for `__length` and `__breadth`.
 
-3. *Print Values*:
+3. **Print Values**:
    - Display the private variables from within the class to demonstrate access.
 
-4. *Instantiate the Object*:
-   - Create an object of the Rectangle class to trigger the constructor.
+4. **Instantiate the Object**:
+   - Create an object of the `Rectangle` class to trigger the constructor.
 
 ---
 
 ## 💻 Program
-
 ```
-
-# Encapsulation Example in Python
-
 class Rectangle:
-    # Constructor to initialize private variables
-    def __init__(self, length, breadth):
-        self.__length = length      # Private attribute
-        self.__breadth = breadth    # Private attribute
+    def __init__(self, length, width):
+        self.__length = length  # Private variable
+        self.__width = width    # Private variable
+    
+    # Method to print private variables
+    def print_values(self):
+        print(self.__length)
+        print(self.__width)
 
-    # Method to display private values
-    def display(self):
-        print("Length:", self.__length)
-        print("Breadth:", self.__breadth)
+# Create an object of Rectangle class
+rect = Rectangle(5, 3)
 
-# Create an object of the Rectangle class
-rect = Rectangle(10, 5)
+# Print private values using the method within the class
+rect.print_values()
 
-# Display private members using class method
-rect.display()
+# Attempt to print private values outside the class (will raise an AttributeError)
+
 ```
 ## Output
-<img width="310" height="84" alt="image" src="https://github.com/user-attachments/assets/df418e57-b375-4bdf-8f11-2e0def3c72ec" />
-
+<img width="1172" height="274" alt="443963746-63fc5989-f95c-4771-8490-bdff81b7eeb4" src="https://github.com/user-attachments/assets/3def9510-a203-46fb-b7a6-4a7c0e8ec6d7" />
 
 ## Result
-The program successfully demonstrates Encapsulation in Python by defining a class with private data members (__length and __breadth).
-The private variables are accessed only through class methods, ensuring data protection and controlled access.
+Thus, the program is executed successfully
